@@ -4,1007 +4,1043 @@
 
 <head>
 
-  <meta charset="UTF-8" />
+<meta charset="UTF-8" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Maldives.org | Resorts, Islands, Experiences & Travel Guide</title>
+<title>Maldives.org | Resorts, Islands & Experiences</title>
 
-  <meta
+<meta name="description" content="Discover and book the Maldives: resorts, villas, experiences, transfers, cruises and travel guides." />
 
-    name="description"
+<style>
 
-    content="Discover the Maldives. Explore luxury resorts, private islands, overwater villas, diving, dining, honeymoon escapes and unforgettable experiences at Maldives.org."
+:root{
 
-  />
+--ink:#0b2f38;
 
-  <style>
+--muted:#5d7780;
 
-    * {
+--aqua:#00a9c6;
 
-      margin: 0;
+--teal:#11bfa1;
 
-      padding: 0;
+--sun:#ffc52f;
 
-      box-sizing: border-box;
+--cream:#f6fbfc;
 
-    }
+--white:#fff;
 
-    html {
+--shadow:0 16px 45px rgba(7,61,74,.16)
 
-      scroll-behavior: smooth;
+}
 
-    }
+*{box-sizing:border-box}
 
-    body {
+html{scroll-behavior:smooth}
 
-      font-family: Arial, Helvetica, sans-serif;
+body{
 
-      background: #f7fdff;
+margin:0;
 
-      color: #12303a;
+font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 
-      line-height: 1.6;
+color:var(--ink);
 
-    }
+background:#fff
 
-    a {
+}
 
-      text-decoration: none;
+a{text-decoration:none;color:inherit}
 
-      color: inherit;
+.wrap{
 
-    }
+max-width:1240px;
 
-    img {
+margin:auto;
 
-      max-width: 100%;
+padding:0 24px
 
-      display: block;
+}
 
-    }
+header{
 
-    /* HEADER */
+position:absolute;
 
-    header {
+top:0;
 
-      position: sticky;
+left:0;
 
-      top: 0;
+right:0;
 
-      z-index: 1000;
+z-index:10;
 
-      background: rgba(255, 255, 255, 0.96);
+color:#fff
 
-      backdrop-filter: blur(12px);
+}
 
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+.nav{
 
-    }
+height:86px;
 
-    .topbar {
+display:flex;
 
-      max-width: 1400px;
+align-items:center;
 
-      margin: auto;
+justify-content:space-between
 
-      padding: 13px 22px;
+}
 
-      display: flex;
+.brand{
 
-      align-items: center;
+font-size:33px;
 
-      justify-content: space-between;
+font-weight:900;
 
-      gap: 25px;
+letter-spacing:-1.8px
 
-    }
+}
 
-    .logo {
+.brand span{color:var(--sun)}
 
-      font-size: 34px;
+nav{
 
-      font-weight: 900;
+display:flex;
 
-      letter-spacing: -1.5px;
+align-items:center;
 
-      background: linear-gradient(90deg, #00a9c6, #18c5a2, #ffb51b);
+gap:26px;
 
-      -webkit-background-clip: text;
+font-weight:750;
 
-      -webkit-text-fill-color: transparent;
+font-size:14px
 
-      white-space: nowrap;
+}
 
-    }
+.nav-cta{
 
-    nav {
+background:#fff;
 
-      display: flex;
+color:var(--ink);
 
-      gap: 24px;
+padding:11px 17px;
 
-      align-items: center;
+border-radius:999px
 
-      font-weight: 700;
+}
 
-      font-size: 15px;
+.hero{
 
-    }
+min-height:760px;
 
-    nav a:hover {
+color:#fff;
 
-      color: #00a9c6;
+position:relative;
 
-    }
+background:
 
-    .plan-btn {
+linear-gradient(
 
-      background: linear-gradient(90deg, #ff9c1a, #ffca27);
+180deg,
 
-      padding: 11px 18px;
+rgba(4,42,54,.22) 0%,
 
-      border-radius: 30px;
+rgba(4,42,54,.30) 50%,
 
-      color: #16323a;
+rgba(4,42,54,.78) 100%
 
-      font-weight: 800;
+),
 
-    }
+url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2200&q=88')
 
-    /* HERO */
+center/cover;
 
-    .hero {
+display:flex;
 
-      min-height: 82vh;
+align-items:flex-end
 
-      position: relative;
+}
 
-      display: flex;
+.hero-inner{
 
-      align-items: center;
+padding-bottom:118px;
 
-      justify-content: center;
+width:100%
 
-      text-align: center;
+}
 
-      padding: 80px 20px;
+.eyebrow{
 
-      color: white;
+text-transform:uppercase;
 
-      background:
+letter-spacing:3px;
 
-        linear-gradient(
+font-weight:850;
 
-          rgba(0, 73, 94, 0.22),
+font-size:12px;
 
-          rgba(0, 64, 81, 0.42)
+margin-bottom:18px
 
-        ),
+}
 
-        url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=90");
+.hero h1{
 
-      background-size: cover;
+font-size:clamp(58px,8vw,112px);
 
-      background-position: center;
+line-height:.9;
 
-    }
+letter-spacing:-5px;
 
-    .hero-content {
+margin:0;
 
-      max-width: 1050px;
+max-width:990px
 
-    }
+}
 
-    .hero-small {
+.hero p{
 
-      display: inline-block;
+font-size:20px;
 
-      background: rgba(255, 255, 255, 0.18);
+line-height:1.55;
 
-      border: 1px solid rgba(255, 255, 255, 0.5);
+max-width:720px;
 
-      padding: 8px 18px;
+margin:25px 0 30px
 
-      border-radius: 30px;
+}
 
-      font-size: 14px;
+.hero-actions{
 
-      font-weight: 700;
+display:flex;
 
-      text-transform: uppercase;
+gap:12px;
 
-      letter-spacing: 2px;
+flex-wrap:wrap
 
-      margin-bottom: 18px;
+}
 
-    }
+.btn{
 
-    .hero h1 {
+display:inline-flex;
 
-      font-size: clamp(64px, 10vw, 140px);
+align-items:center;
 
-      line-height: 0.9;
+justify-content:center;
 
-      font-weight: 900;
+padding:15px 22px;
 
-      letter-spacing: -6px;
+border-radius:999px;
 
-      text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+font-weight:850
 
-    }
+}
 
-    .hero h2 {
+.btn-primary{
 
-      margin-top: 22px;
+background:var(--sun);
 
-      font-size: clamp(25px, 4vw, 48px);
+color:var(--ink)
 
-      font-weight: 800;
+}
 
-    }
+.btn-ghost{
 
-    .hero p {
+background:rgba(255,255,255,.16);
 
-      max-width: 750px;
+border:1px solid rgba(255,255,255,.55);
 
-      margin: 18px auto 28px;
+backdrop-filter:blur(9px)
 
-      font-size: 19px;
+}
 
-    }
+.search-shell{
 
-    .hero-buttons {
+margin-top:-57px;
 
-      display: flex;
+position:relative;
 
-      justify-content: center;
+z-index:15
 
-      flex-wrap: wrap;
+}
 
-      gap: 14px;
+.search-card{
 
-    }
+background:#fff;
 
-    .btn {
+border-radius:24px;
 
-      display: inline-block;
+box-shadow:var(--shadow);
 
-      padding: 15px 25px;
+padding:19px;
 
-      border-radius: 40px;
+display:grid;
 
-      font-weight: 800;
+grid-template-columns:1.2fr .85fr .85fr .85fr auto;
 
-      transition: 0.2s ease;
+gap:10px
 
-    }
+}
 
-    .btn:hover {
+.field{
 
-      transform: translateY(-2px);
+background:#f6fafb;
 
-    }
+border:1px solid #dce9ec;
 
-    .btn-primary {
+border-radius:15px;
 
-      background: #ffbd1f;
+padding:11px 14px
 
-      color: #15343c;
+}
 
-    }
+.field label{
 
-    .btn-secondary {
+font-size:11px;
 
-      background: white;
+text-transform:uppercase;
 
-      color: #087d96;
+font-weight:900;
 
-    }
+letter-spacing:1px;
 
-    /* SEARCH */
+color:#789099;
 
-    .search-wrap {
+display:block;
 
-      max-width: 1050px;
+margin-bottom:4px
 
-      margin: -45px auto 0;
+}
 
-      position: relative;
+.field .value{
 
-      z-index: 20;
+font-weight:800;
 
-      padding: 0 20px;
+font-size:15px
 
-    }
+}
 
-    .search-box {
+.search-btn{
 
-      background: white;
+border:0;
 
-      padding: 22px;
+border-radius:15px;
 
-      border-radius: 22px;
+background:var(--aqua);
 
-      box-shadow: 0 15px 50px rgba(15, 95, 110, 0.18);
+color:#fff;
 
-      display: grid;
+font-weight:900;
 
-      grid-template-columns: 1fr 1fr 1fr auto;
+padding:0 24px;
 
-      gap: 12px;
+font-size:15px
 
-    }
+}
 
-    .search-box input,
+.now-band{
 
-    .search-box select {
+padding:42px 0 15px
 
-      width: 100%;
+}
 
-      border: 1px solid #d8e7eb;
+.now-card{
 
-      padding: 15px;
+display:flex;
 
-      border-radius: 12px;
+align-items:center;
 
-      font-size: 15px;
+justify-content:space-between;
 
-      background: white;
+gap:24px;
 
-    }
+padding:24px 28px;
 
-    .search-box button {
+border-radius:22px;
 
-      border: 0;
+background:linear-gradient(120deg,#e8fbff,#f5fffc);
 
-      padding: 15px 23px;
+border:1px solid #d9f0f3
 
-      border-radius: 12px;
+}
 
-      background: #00a8c5;
+.now-left{
 
-      color: white;
+display:flex;
 
-      font-weight: 800;
+gap:17px;
 
-      cursor: pointer;
+align-items:center
 
-      font-size: 15px;
+}
 
-    }
+.sun-icon{
 
-    /* GENERAL */
+width:52px;
 
-    .section {
+height:52px;
 
-      max-width: 1250px;
+border-radius:50%;
 
-      margin: auto;
+display:grid;
 
-      padding: 90px 22px;
+place-items:center;
 
-    }
+background:#fff3bc;
 
-    .section-title {
+font-size:27px
 
-      text-align: center;
+}
 
-      margin-bottom: 45px;
+.now-title{
 
-    }
+font-size:13px;
 
-    .section-title span {
+text-transform:uppercase;
 
-      color: #00a8c5;
+letter-spacing:1.8px;
 
-      font-size: 14px;
+font-weight:900;
 
-      text-transform: uppercase;
+color:#4b7580
 
-      font-weight: 900;
+}
 
-      letter-spacing: 2px;
+.now-city{
 
-    }
+font-size:23px;
 
-    .section-title h2 {
+font-weight:900
 
-      font-size: clamp(34px, 5vw, 55px);
+}
 
-      line-height: 1.05;
+.now-stats{
 
-      margin: 8px auto 12px;
+display:flex;
 
-    }
+gap:30px;
 
-    .section-title p {
+text-align:right
 
-      max-width: 700px;
+}
 
-      margin: auto;
+.now-stat strong{
 
-      color: #58727a;
+font-size:28px;
 
-      font-size: 18px;
+display:block
 
-    }
+}
 
-    /* QUICK CATEGORIES */
+.now-stat span{
 
-    .categories {
+font-size:12px;
 
-      display: grid;
+text-transform:uppercase;
 
-      grid-template-columns: repeat(6, 1fr);
+letter-spacing:1.2px;
 
-      gap: 15px;
+color:#6f8790;
 
-    }
+font-weight:800
 
-    .category {
+}
 
-      background: white;
+.section{
 
-      border-radius: 18px;
+padding:88px 0
 
-      padding: 25px 14px;
+}
 
-      text-align: center;
+.section.soft{
 
-      box-shadow: 0 8px 30px rgba(20, 90, 105, 0.08);
+background:var(--cream)
 
-      transition: 0.2s ease;
+}
 
-    }
+.section-head{
 
-    .category:hover {
+display:flex;
 
-      transform: translateY(-6px);
+align-items:end;
 
-    }
+justify-content:space-between;
 
-    .category .emoji {
+gap:28px;
 
-      font-size: 40px;
+margin-bottom:34px
 
-      margin-bottom: 9px;
+}
 
-    }
+.section-kicker{
 
-    .category strong {
+font-size:12px;
 
-      display: block;
+text-transform:uppercase;
 
-      font-size: 16px;
+letter-spacing:2.3px;
 
-    }
+font-weight:900;
 
-    /* RESORT CARDS */
+color:var(--aqua)
 
-    .resort-grid {
+}
 
-      display: grid;
+h2{
 
-      grid-template-columns: repeat(3, 1fr);
+font-size:clamp(38px,5vw,58px);
 
-      gap: 25px;
+letter-spacing:-2px;
 
-    }
+line-height:1.02;
 
-    .resort-card {
+margin:8px 0 0
 
-      background: white;
+}
 
-      overflow: hidden;
+.section-head p{
 
-      border-radius: 24px;
+max-width:520px;
 
-      box-shadow: 0 12px 38px rgba(18, 93, 105, 0.11);
+color:var(--muted);
 
-    }
+font-size:17px;
 
-    .resort-image {
+line-height:1.55;
 
-      height: 260px;
+margin:0
 
-      background-size: cover;
+}
 
-      background-position: center;
+.tiles{
 
-      position: relative;
+display:grid;
 
-    }
+grid-template-columns:repeat(4,1fr);
 
-    .tag {
+gap:18px
 
-      position: absolute;
+}
 
-      top: 15px;
+.tile{
 
-      left: 15px;
+min-height:390px;
 
-      background: #ffbd1f;
+border-radius:24px;
 
-      color: #17353d;
+overflow:hidden;
 
-      padding: 7px 12px;
+position:relative;
 
-      border-radius: 20px;
+background-size:cover;
 
-      font-size: 12px;
+background-position:center
 
-      font-weight: 900;
+}
 
-    }
+.tile:after{
 
-    .resort-info {
+content:"";
 
-      padding: 22px;
+position:absolute;
 
-    }
+inset:0;
 
-    .resort-info h3 {
+background:linear-gradient(transparent 35%,rgba(0,0,0,.72))
 
-      font-size: 23px;
+}
 
-      margin-bottom: 6px;
+.tile-content{
 
-    }
+position:absolute;
 
-    .resort-info p {
+left:20px;
 
-      color: #607a82;
+right:20px;
 
-      margin-bottom: 14px;
+bottom:18px;
 
-    }
+z-index:2;
 
-    .learn-more {
+color:#fff
 
-      color: #0099b5;
+}
 
-      font-weight: 900;
+.tile-content span{
 
-    }
+font-size:12px;
 
-    /* EXPERIENCE */
+text-transform:uppercase;
 
-    .experience-section {
+letter-spacing:1.4px;
 
-      background: linear-gradient(135deg, #00a8c5, #13bea1);
+font-weight:850
 
-      color: white;
+}
 
-    }
+.tile-content h3{
 
-    .experience-inner {
+font-size:27px;
 
-      max-width: 1250px;
+margin:5px 0 7px
 
-      margin: auto;
+}
 
-      padding: 90px 22px;
+.tile-content p{
 
-    }
+font-size:14px;
 
-    .experience-grid {
+opacity:.9;
 
-      display: grid;
+margin:0
 
-      grid-template-columns: repeat(4, 1fr);
+}
 
-      gap: 18px;
+.resort-grid{
 
-    }
+display:grid;
 
-    .experience-card {
+grid-template-columns:repeat(3,1fr);
 
-      min-height: 300px;
+gap:22px
 
-      border-radius: 22px;
+}
 
-      overflow: hidden;
+.resort{
 
-      position: relative;
+border-radius:23px;
 
-      display: flex;
+overflow:hidden;
 
-      align-items: flex-end;
+background:#fff;
 
-      padding: 22px;
+box-shadow:0 10px 30px rgba(12,72,84,.11)
 
-      background-size: cover;
+}
 
-      background-position: center;
+.resort-img{
 
-    }
+height:245px;
 
-    .experience-card::before {
+background-size:cover;
 
-      content: "";
+background-position:center;
 
-      position: absolute;
+position:relative
 
-      inset: 0;
+}
 
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+.badge{
 
-    }
+position:absolute;
 
-    .experience-card h3 {
+left:14px;
 
-      z-index: 2;
+top:14px;
 
-      font-size: 24px;
+background:var(--sun);
 
-    }
+padding:8px 11px;
 
-    /* FEATURE BAND */
+border-radius:999px;
 
-    .feature-band {
+font-size:11px;
 
-      background: #fff3c8;
+font-weight:900
 
-    }
+}
 
-    .feature-grid {
+.resort-body{padding:20px}
 
-      max-width: 1250px;
+.resort-body h3{
 
-      margin: auto;
+font-size:22px;
 
-      padding: 70px 22px;
+margin:0 0 7px
 
-      display: grid;
+}
 
-      grid-template-columns: repeat(4, 1fr);
+.resort-body p{
 
-      gap: 30px;
+color:var(--muted);
 
-      text-align: center;
+font-size:14px;
 
-    }
+line-height:1.5;
 
-    .feature-number {
+margin:0 0 18px
 
-      font-size: 42px;
+}
 
-      font-weight: 900;
+.resort-bottom{
 
-      color: #00a6bd;
+display:flex;
 
-    }
+justify-content:space-between;
 
-    .feature-label {
+align-items:center
 
-      font-weight: 800;
+}
 
-    }
+.resort-bottom a{
 
-    /* ADVERTISE */
+font-weight:900;
 
-    .advertise {
+color:#008ca7
 
-      max-width: 1200px;
+}
 
-      margin: 80px auto;
+.price{font-weight:900}
 
-      padding: 60px 30px;
+.price small{
 
-      border-radius: 30px;
+font-weight:650;
 
-      background:
+color:#789099
 
-        linear-gradient(135deg, #073847, #006d82);
+}
 
-      color: white;
+.experience-grid{
 
-      text-align: center;
+display:grid;
 
-    }
+grid-template-columns:1.3fr .7fr .7fr;
 
-    .advertise h2 {
+grid-template-rows:260px 260px;
 
-      font-size: clamp(35px, 5vw, 55px);
+gap:18px
 
-      margin-bottom: 15px;
+}
 
-    }
+.exp{
 
-    .advertise p {
+border-radius:24px;
 
-      max-width: 760px;
+overflow:hidden;
 
-      margin: auto auto 25px;
+position:relative;
 
-      font-size: 18px;
+background-size:cover;
 
-      opacity: 0.92;
+background-position:center
 
-    }
+}
 
-    .ad-btn {
+.exp:first-child{grid-row:1/3}
 
-      background: #ffbc1f;
+.exp:after{
 
-      color: #18363e;
+content:"";
 
-    }
+position:absolute;
 
-    /* NEWSLETTER */
+inset:0;
 
-    .newsletter {
+background:linear-gradient(transparent,rgba(0,0,0,.72))
 
-      max-width: 1000px;
+}
 
-      margin: auto;
+.exp h3{
 
-      padding: 70px 22px;
+position:absolute;
 
-      text-align: center;
+z-index:2;
 
-    }
+left:20px;
 
-    .newsletter h2 {
+bottom:18px;
 
-      font-size: 40px;
+color:#fff;
 
-      margin-bottom: 10px;
+font-size:25px;
 
-    }
+margin:0
 
-    .newsletter p {
+}
 
-      color: #60777e;
+.guide-strip{
 
-      margin-bottom: 24px;
+background:#082f39;
 
-    }
+color:#fff;
 
-    .newsletter-form {
+padding:62px 0
 
-      max-width: 650px;
+}
 
-      margin: auto;
+.guide-grid{
 
-      display: flex;
+display:grid;
 
-      gap: 10px;
+grid-template-columns:1.2fr repeat(3,.8fr);
 
-    }
+gap:22px;
 
-    .newsletter-form input {
+align-items:center
 
-      flex: 1;
+}
 
-      padding: 16px;
+.guide-grid h2{margin:0}
 
-      border-radius: 12px;
+.guide-card{
 
-      border: 1px solid #cadde2;
+background:rgba(255,255,255,.08);
 
-      font-size: 16px;
+padding:22px;
 
-    }
+border:1px solid rgba(255,255,255,.12);
 
-    .newsletter-form button {
+border-radius:18px
 
-      border: none;
+}
 
-      border-radius: 12px;
+.guide-card strong{
 
-      padding: 16px 22px;
+display:block;
 
-      background: #00a8c5;
+font-size:17px;
 
-      color: white;
+margin-bottom:5px
 
-      font-weight: 900;
+}
 
-      cursor: pointer;
+.guide-card span{
 
-    }
+font-size:13px;
 
-    /* FOOTER */
+opacity:.72
 
-    footer {
+}
 
-      background: #062f3a;
+.newsletter{
 
-      color: white;
+padding:74px 0;
 
-      padding: 55px 22px 25px;
+text-align:center
 
-    }
+}
 
-    .footer-inner {
+.newsletter h2{margin-bottom:12px}
 
-      max-width: 1250px;
+.newsletter p{
 
-      margin: auto;
+color:var(--muted);
 
-      display: grid;
+font-size:17px
 
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+}
 
-      gap: 40px;
+.signup{
 
-    }
+max-width:600px;
 
-    .footer-logo {
+margin:25px auto 0;
 
-      font-size: 34px;
+display:flex;
 
-      font-weight: 900;
+gap:10px
 
-      color: #49d9d2;
+}
 
-      margin-bottom: 12px;
+.signup input{
 
-    }
+flex:1;
 
-    footer h4 {
+border:1px solid #d6e5e8;
 
-      margin-bottom: 12px;
+border-radius:14px;
 
-      color: #ffbd1f;
+padding:16px;
 
-    }
+font-size:15px
 
-    footer a {
+}
 
-      display: block;
+.signup button{
 
-      margin-bottom: 8px;
+border:0;
 
-      opacity: 0.85;
+border-radius:14px;
 
-    }
+background:var(--aqua);
 
-    footer a:hover {
+color:#fff;
 
-      opacity: 1;
+font-weight:900;
 
-    }
+padding:0 22px
 
-    .copyright {
+}
 
-      max-width: 1250px;
+footer{
 
-      margin: 35px auto 0;
+background:#052731;
 
-      padding-top: 20px;
+color:#d7e7ea;
 
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+padding:45px 0 32px
 
-      text-align: center;
+}
 
-      opacity: 0.7;
+.footer-top{
 
-      font-size: 14px;
+display:flex;
 
-    }
+justify-content:space-between;
 
-    /* MOBILE */
+gap:30px;
 
-    @media (max-width: 950px) {
+align-items:flex-start
 
-      nav {
+}
 
-        display: none;
+.footer-brand{
 
-      }
+font-size:28px;
 
-      .topbar {
+font-weight:900;
 
-        justify-content: center;
+color:#fff
 
-      }
+}
 
-      .logo {
+.footer-links{
 
-        font-size: 31px;
+display:flex;
 
-      }
+gap:25px;
 
-      .hero h1 {
+font-size:14px
 
-        letter-spacing: -3px;
+}
 
-      }
+.legal{
 
-      .search-box {
+border-top:1px solid rgba(255,255,255,.1);
 
-        grid-template-columns: 1fr;
+margin-top:30px;
 
-      }
+padding-top:20px;
 
-      .categories {
+font-size:12px;
 
-        grid-template-columns: repeat(3, 1fr);
+opacity:.65
 
-      }
+}
 
-      .resort-grid {
+@media(max-width:900px){
 
-        grid-template-columns: 1fr;
+nav a:not(.nav-cta){display:none}
 
-      }
+.hero{min-height:690px}
 
-      .experience-grid {
+.search-card{
 
-        grid-template-columns: repeat(2, 1fr);
+grid-template-columns:1fr 1fr
 
-      }
+}
 
-      .feature-grid {
+.search-btn{min-height:56px}
 
-        grid-template-columns: repeat(2, 1fr);
+.tiles{
 
-      }
+grid-template-columns:1fr 1fr
 
-      .footer-inner {
+}
 
-        grid-template-columns: 1fr 1fr;
+.resort-grid{
 
-      }
+grid-template-columns:1fr
 
-    }
+}
 
-    @media (max-width: 600px) {
+.experience-grid{
 
-      .hero {
+grid-template-columns:1fr;
 
-        min-height: 75vh;
+grid-template-rows:auto
 
-      }
+}
 
-      .hero p {
+.exp,.exp:first-child{
 
-        font-size: 16px;
+grid-row:auto;
 
-      }
+min-height:280px
 
-      .categories {
+}
 
-        grid-template-columns: repeat(2, 1fr);
+.guide-grid{
 
-      }
+grid-template-columns:1fr 1fr
 
-      .experience-grid {
+}
 
-        grid-template-columns: 1fr;
+.section-head{
 
-      }
+align-items:start;
 
-      .experience-card {
+flex-direction:column
 
-        min-height: 240px;
+}
 
-      }
+.now-card{
 
-      .feature-grid {
+align-items:flex-start;
 
-        grid-template-columns: 1fr 1fr;
+flex-direction:column
 
-      }
+}
 
-      .newsletter-form {
+.now-stats{text-align:left}
 
-        flex-direction: column;
+.footer-top{
 
-      }
+flex-direction:column
 
-      .footer-inner {
+}
 
-        grid-template-columns: 1fr;
+}
 
-      }
+@media(max-width:560px){
 
-    }
+.hero h1{letter-spacing:-3px}
 
-  </style>
+.search-card{
+
+grid-template-columns:1fr
+
+}
+
+.tiles{
+
+grid-template-columns:1fr
+
+}
+
+.guide-grid{
+
+grid-template-columns:1fr
+
+}
+
+.signup{
+
+flex-direction:column
+
+}
+
+.signup button{padding:15px}
+
+.now-stats{gap:18px}
+
+.now-stat strong{font-size:22px}
+
+.footer-links{flex-wrap:wrap}
+
+.hero-inner{padding-bottom:95px}
+
+}
+
+</style>
 
 </head>
 
@@ -1012,769 +1048,617 @@
 
 <header>
 
-  <div class="topbar">
+<div class="wrap nav">
 
-    <a href="#" class="logo">
+<div class="brand">Maldives<span>.org</span></div>
 
-      Maldives.org
+<nav>
 
-    </a>
+<a href="#stay">Stay</a>
 
-    <nav>
+<a href="#experiences">Experiences</a>
 
-      <a href="#resorts">Resorts</a>
+<a href="#guides">Travel Guides</a>
 
-      <a href="#experiences">Experiences</a>
+<a href="#deals">Deals</a>
 
-      <a href="#">Islands</a>
+<a class="nav-cta" href="#plan">Plan Your Trip</a>
 
-      <a href="#">Travel Guide</a>
-
-      <a href="#">Deals</a>
-
-      <a href="#advertise">Advertise</a>
-
-      <a href="#resorts" class="plan-btn">
-
-        Plan Your Trip
-
-      </a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-
-  <div class="hero-content">
-
-    <div class="hero-small">
-
-      Welcome to paradise
-
-    </div>
-
-    <h1>Maldives.org</h1>
-
-    <h2>
-
-      Your Gateway to the Maldives
-
-    </h2>
-
-    <p>
-
-      Discover extraordinary resorts, private islands, overwater villas,
-
-      world-class diving, romantic escapes and unforgettable experiences
-
-      across one of the most beautiful destinations on Earth.
-
-    </p>
-
-    <div class="hero-buttons">
-
-      <a href="#resorts" class="btn btn-primary">
-
-        Explore Resorts
-
-      </a>
-
-      <a href="#experiences" class="btn btn-secondary">
-
-        Discover Experiences
-
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- SEARCH -->
-
-<div class="search-wrap">
-
-  <div class="search-box">
-
-    <input
-
-      type="text"
-
-      placeholder="Search resorts, islands or experiences"
-
-    />
-
-    <select>
-
-      <option>All Resort Types</option>
-
-      <option>Luxury Resorts</option>
-
-      <option>Family Resorts</option>
-
-      <option>Honeymoon Resorts</option>
-
-      <option>Private Islands</option>
-
-      <option>Overwater Villas</option>
-
-    </select>
-
-    <select>
-
-      <option>Any Budget</option>
-
-      <option>Under $500/night</option>
-
-      <option>$500 - $1,000/night</option>
-
-      <option>$1,000 - $2,500/night</option>
-
-      <option>$2,500+/night</option>
-
-    </select>
-
-    <button onclick="alert('Resort search is coming soon!')">
-
-      Search Maldives
-
-    </button>
-
-  </div>
+</nav>
 
 </div>
 
-<!-- DISCOVER -->
+</header>
 
-<section class="section">
+<section class="hero">
 
-  <div class="section-title">
+<div class="wrap hero-inner">
 
-    <span>Find Your Paradise</span>
+<div class="eyebrow">The islands you've been dreaming about</div>
 
-    <h2>
+<h1>Find your perfect Maldives.</h1>
 
-      How Do You Want to Experience the Maldives?
+<p>
 
-    </h2>
+Explore extraordinary resorts, overwater villas, private islands and unforgettable experiences — then compare and book the trip in one place.
 
-    <p>
+</p>
 
-      From once-in-a-lifetime honeymoon escapes to family adventures,
+<div class="hero-actions">
 
-      diving trips and ultra-luxury private islands.
+<a href="#stay" class="btn btn-primary">Explore Resorts</a>
 
-    </p>
+<a href="#experiences" class="btn btn-ghost">Discover Experiences</a>
 
-  </div>
+</div>
 
-  <div class="categories">
-
-    <div class="category">
-
-      <div class="emoji">🏝️</div>
-
-      <strong>Private Islands</strong>
-
-    </div>
-
-    <div class="category">
-
-      <div class="emoji">🌊</div>
-
-      <strong>Overwater Villas</strong>
-
-    </div>
-
-    <div class="category">
-
-      <div class="emoji">💍</div>
-
-      <strong>Honeymoons</strong>
-
-    </div>
-
-    <div class="category">
-
-      <div class="emoji">🤿</div>
-
-      <strong>Diving</strong>
-
-    </div>
-
-    <div class="category">
-
-      <div class="emoji">👨‍👩‍👧‍👦</div>
-
-      <strong>Family Trips</strong>
-
-    </div>
-
-    <div class="category">
-
-      <div class="emoji">✨</div>
-
-      <strong>Ultra Luxury</strong>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<!-- FEATURED RESORTS -->
+<div class="wrap search-shell" id="plan">
 
-<section class="section" id="resorts">
+<div class="search-card">
 
-  <div class="section-title">
+<div class="field">
 
-    <span>Stay Somewhere Extraordinary</span>
+<label>Where</label>
 
-    <h2>
+<div class="value">Maldives</div>
 
-      Featured Maldives Resorts
+</div>
 
-    </h2>
+<div class="field">
 
-    <p>
+<label>Check in</label>
 
-      Explore spectacular resorts throughout the Maldives.
+<div class="value">Add dates</div>
 
-      Full resort profiles, pricing, availability and booking tools are coming next.
+</div>
 
-    </p>
+<div class="field">
 
-  </div>
+<label>Check out</label>
 
-  <div class="resort-grid">
+<div class="value">Add dates</div>
 
-    <article class="resort-card">
+</div>
 
-      <div
+<div class="field">
 
-        class="resort-image"
+<label>Travelers</label>
 
-        style="
+<div class="value">2 guests</div>
 
-        background-image:
+</div>
 
-        url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=900&q=85');
+<button class="search-btn">Search stays</button>
 
-        "
+</div>
 
-      >
+</div>
 
-        <div class="tag">Luxury</div>
+<section class="now-band">
 
-      </div>
+<div class="wrap">
 
-      <div class="resort-info">
+<div class="now-card">
 
-        <h3>
+<div class="now-left">
 
-          Overwater Paradise
+<div class="sun-icon">☀️</div>
 
-        </h3>
+<div>
 
-        <p>
+<div class="now-title">Maldives now</div>
 
-          Wake above crystal-clear turquoise water in one of the world's
+<div class="now-city">Malé, Maldives</div>
 
-          most iconic tropical experiences.
+</div>
 
-        </p>
+</div>
 
-        <a href="#" class="learn-more">
+<div class="now-stats">
 
-          Explore →
+<div class="now-stat">
 
-        </a>
+<strong id="male-time">--:--</strong>
 
-      </div>
+<span>Local time</span>
 
-    </article>
+</div>
 
-    <article class="resort-card">
+<div class="now-stat">
 
-      <div
+<strong id="male-date">--</strong>
 
-        class="resort-image"
+<span>Local date</span>
 
-        style="
+</div>
 
-        background-image:
+<div class="now-stat">
 
-        url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=85');
+<strong id="male-temp">29°C</strong>
 
-        "
+<span>Temperature</span>
 
-      >
+</div>
 
-        <div class="tag">Romance</div>
+</div>
 
-      </div>
+</div>
 
-      <div class="resort-info">
-
-        <h3>
-
-          Romantic Escapes
-
-        </h3>
-
-        <p>
-
-          Private beaches, sunset dinners and spectacular villas for
-
-          honeymoons and unforgettable celebrations.
-
-        </p>
-
-        <a href="#" class="learn-more">
-
-          Explore →
-
-        </a>
-
-      </div>
-
-    </article>
-
-    <article class="resort-card">
-
-      <div
-
-        class="resort-image"
-
-        style="
-
-        background-image:
-
-        url('https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=85');
-
-        "
-
-      >
-
-        <div class="tag">Adventure</div>
-
-      </div>
-
-      <div class="resort-info">
-
-        <h3>
-
-          Island Adventures
-
-        </h3>
-
-        <p>
-
-          Snorkel reefs, dive with marine life, explore islands and
-
-          experience the incredible Indian Ocean.
-
-        </p>
-
-        <a href="#" class="learn-more">
-
-          Explore →
-
-        </a>
-
-      </div>
-
-    </article>
-
-  </div>
+</div>
 
 </section>
 
-<!-- EXPERIENCES -->
+<section class="section" id="stay">
 
-<section class="experience-section" id="experiences">
+<div class="wrap">
 
-  <div class="experience-inner">
+<div class="section-head">
 
-    <div class="section-title">
+<div>
 
-      <span style="color:#ffdd63;">
+<div class="section-kicker">Choose your escape</div>
 
-        Unforgettable Moments
+<h2>Stay your way.</h2>
 
-      </span>
+</div>
 
-      <h2>
+<p>
 
-        Experience the Maldives
+From once-in-a-lifetime overwater villas to family-friendly islands and intimate boutique resorts, find the Maldives that fits your trip.
 
-      </h2>
+</p>
 
-      <p style="color:white;">
+</div>
 
-        The Maldives is much more than a hotel room.
+<div class="tiles">
 
-        Discover the experiences that make these islands legendary.
+<a class="tile" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1000&q=85')">
 
-      </p>
+<div class="tile-content">
 
-    </div>
+<span>Iconic</span>
 
-    <div class="experience-grid">
+<h3>Overwater Villas</h3>
 
-      <div
+<p>Wake up directly above the Indian Ocean.</p>
 
-        class="experience-card"
+</div>
 
-        style="
+</a>
 
-        background-image:
+<a class="tile" style="background-image:url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1000&q=85')">
 
-        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=85');
+<div class="tile-content">
 
-        "
+<span>Romantic</span>
 
-      >
+<h3>Honeymoons</h3>
 
-        <h3>
+<p>Private escapes made for two.</p>
 
-          Diving & Snorkeling
+</div>
 
-        </h3>
+</a>
 
-      </div>
+<a class="tile" style="background-image:url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1000&q=85')">
 
-      <div
+<div class="tile-content">
 
-        class="experience-card"
+<span>Effortless</span>
 
-        style="
+<h3>All-Inclusive</h3>
 
-        background-image:
+<p>One price. Everything taken care of.</p>
 
-        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85');
+</div>
 
-        "
+</a>
 
-      >
+<a class="tile" style="background-image:url('https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=1000&q=85')">
 
-        <h3>
+<div class="tile-content">
 
-          Ocean Adventures
+<span>Exclusive</span>
 
-        </h3>
+<h3>Private Islands</h3>
 
-      </div>
+<p>Ultimate privacy in paradise.</p>
 
-      <div
+</div>
 
-        class="experience-card"
+</a>
 
-        style="
+</div>
 
-        background-image:
-
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=85');
-
-        "
-
-      >
-
-        <h3>
-
-          Private Beaches
-
-        </h3>
-
-      </div>
-
-      <div
-
-        class="experience-card"
-
-        style="
-
-        background-image:
-
-        url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=85');
-
-        "
-
-      >
-
-        <h3>
-
-          Sunset Escapes
-
-        </h3>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<!-- DESTINATION HIGHLIGHTS -->
+<section class="section soft" id="deals">
 
-<section class="feature-band">
+<div class="wrap">
 
-  <div class="feature-grid">
+<div class="section-head">
 
-    <div>
+<div>
 
-      <div class="feature-number">1,000+</div>
+<div class="section-kicker">Featured stays</div>
 
-      <div class="feature-label">
+<h2>Resorts worth the flight.</h2>
 
-        Coral Islands
+</div>
 
-      </div>
+<p>
 
-    </div>
+Curated places travelers love. These cards can eventually connect directly to affiliate booking partners.
 
-    <div>
+</p>
 
-      <div class="feature-number">26</div>
+</div>
 
-      <div class="feature-label">
+<div class="resort-grid">
 
-        Natural Atolls
+<article class="resort">
 
-      </div>
+<div class="resort-img" style="background-image:url('https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85')">
 
-    </div>
+<div class="badge">Luxury Pick</div>
 
-    <div>
+</div>
 
-      <div class="feature-number">100s</div>
+<div class="resort-body">
 
-      <div class="feature-label">
+<h3>Private Island Luxury</h3>
 
-        Resorts & Hotels
+<p>
 
-      </div>
+Ocean villas, powder-white sand and world-class dining in an unforgettable island setting.
 
-    </div>
+</p>
 
-    <div>
+<div class="resort-bottom">
 
-      <div class="feature-number">∞</div>
+<a>View resort →</a>
 
-      <div class="feature-label">
+<div class="price">Compare <small>rates</small></div>
 
-        Unforgettable Memories
+</div>
 
-      </div>
+</div>
 
-    </div>
+</article>
 
-  </div>
+<article class="resort">
+
+<div class="resort-img" style="background-image:url('https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85')">
+
+<div class="badge">Couples</div>
+
+</div>
+
+<div class="resort-body">
+
+<h3>Overwater Romance</h3>
+
+<p>
+
+Sunset decks, private pools and turquoise lagoons designed for a spectacular couples escape.
+
+</p>
+
+<div class="resort-bottom">
+
+<a>View resort →</a>
+
+<div class="price">Compare <small>rates</small></div>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="resort">
+
+<div class="resort-img" style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85')">
+
+<div class="badge">Family Favorite</div>
+
+</div>
+
+<div class="resort-body">
+
+<h3>Family Island Escape</h3>
+
+<p>
+
+Big beaches, water sports, kids activities and plenty of space for a memorable family vacation.
+
+</p>
+
+<div class="resort-bottom">
+
+<a>View resort →</a>
+
+<div class="price">Compare <small>rates</small></div>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- ADVERTISING -->
+<section class="section" id="experiences">
 
-<section class="advertise" id="advertise">
+<div class="wrap">
 
-  <h2>
+<div class="section-head">
 
-    Reach Travelers Planning the Maldives
+<div>
 
-  </h2>
+<div class="section-kicker">Beyond the villa</div>
 
-  <p>
+<h2>Do something unforgettable.</h2>
 
-    Maldives.org is being built as an independent destination platform
+</div>
 
-    connecting travelers with resorts, hotels, airlines, private aviation,
+<p>
 
-    excursions, restaurants and premium travel brands.
+Discover incredible experiences throughout the Maldives, from diving and snorkeling to sunset cruises and island hopping.
 
-  </p>
+</p>
 
-  <a
+</div>
 
-    href="mailto:advertise@maldives.org"
+<div class="experience-grid">
 
-    class="btn ad-btn"
+<a class="exp" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1300&q=85')">
 
-  >
+<h3>Dive with manta rays</h3>
 
-    Advertise on Maldives.org
+</a>
 
-  </a>
+<a class="exp" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85')">
+
+<h3>Sunset cruises</h3>
+
+</a>
+
+<a class="exp" style="background-image:url('https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=900&q=85')">
+
+<h3>Snorkeling</h3>
+
+</a>
+
+<a class="exp" style="background-image:url('https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=900&q=85')">
+
+<h3>Sandbank picnics</h3>
+
+</a>
+
+<a class="exp" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=85')">
+
+<h3>Island hopping</h3>
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- NEWSLETTER -->
+<section class="guide-strip" id="guides">
+
+<div class="wrap guide-grid">
+
+<div>
+
+<div class="section-kicker" style="color:#57d7dd">
+
+Know before you go
+
+</div>
+
+<h2>Your Maldives guide.</h2>
+
+</div>
+
+<div class="guide-card">
+
+<strong>Best time to visit</strong>
+
+<span>Weather, seasons and prices</span>
+
+</div>
+
+<div class="guide-card">
+
+<strong>Getting around</strong>
+
+<span>Seaplanes, speedboats and ferries</span>
+
+</div>
+
+<div class="guide-card">
+
+<strong>Which atoll?</strong>
+
+<span>Find the right island for your trip</span>
+
+</div>
+
+</div>
+
+</section>
 
 <section class="newsletter">
 
-  <h2>
+<div class="wrap">
 
-    Dreaming of the Maldives?
+<div class="section-kicker">
 
-  </h2>
+Maldives deals & inspiration
 
-  <p>
+</div>
 
-    Get resort discoveries, destination guides, travel inspiration
+<h2>Paradise in your inbox.</h2>
 
-    and special offers.
+<p>
 
-  </p>
+Get resort offers, travel ideas and new Maldives guides.
 
-  <form
+</p>
 
-    class="newsletter-form"
+<form class="signup">
 
-    onsubmit="subscribe(event)"
+<input type="email" placeholder="Your email address" />
 
-  >
+<button type="button">
 
-    <input
+Sign me up
 
-      id="email"
+</button>
 
-      type="email"
+</form>
 
-      placeholder="Enter your email address"
-
-      required
-
-    />
-
-    <button type="submit">
-
-      Join Free
-
-    </button>
-
-  </form>
+</div>
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
-  <div class="footer-inner">
+<div class="wrap">
 
-    <div>
+<div class="footer-top">
 
-      <div class="footer-logo">
+<div>
 
-        Maldives.org
+<div class="footer-brand">
 
-      </div>
+Maldives.org
 
-      <p>
+</div>
 
-        Discover the islands, resorts, people and experiences
+<div style="margin-top:7px;opacity:.72;font-size:14px">
 
-        of one of the world's most extraordinary destinations.
+Discover. Compare. Book. Experience.
 
-      </p>
+</div>
 
-    </div>
+</div>
 
-    <div>
+<div class="footer-links">
 
-      <h4>
+<a>Resorts</a>
 
-        Discover
+<a>Experiences</a>
 
-      </h4>
+<a>Travel Guides</a>
 
-      <a href="#resorts">Resorts</a>
+<a>Deals</a>
 
-      <a href="#">Islands</a>
+<a>About</a>
 
-      <a href="#experiences">Experiences</a>
+</div>
 
-      <a href="#">Travel Guide</a>
+</div>
 
-    </div>
+<div class="legal">
 
-    <div>
+Maldives.org — Discover the Maldives.
 
-      <h4>
+</div>
 
-        Plan
-
-      </h4>
-
-      <a href="#">Best Time to Visit</a>
-
-      <a href="#">Flights</a>
-
-      <a href="#">Transfers</a>
-
-      <a href="#">Travel Tips</a>
-
-    </div>
-
-    <div>
-
-      <h4>
-
-        Partners
-
-      </h4>
-
-      <a href="#advertise">Advertise</a>
-
-      <a href="#">List Your Resort</a>
-
-      <a href="#">Travel Partners</a>
-
-      <a href="#">Contact</a>
-
-    </div>
-
-  </div>
-
-  <div class="copyright">
-
-    © <span id="year"></span> Maldives.org.
-
-    All rights reserved.
-
-  </div>
+</div>
 
 </footer>
 
 <script>
 
-  document.getElementById("year").textContent =
+function updateMaleTime(){
 
-    new Date().getFullYear();
+const now = new Date();
 
-  function subscribe(event) {
+document.getElementById('male-time').textContent =
 
-    event.preventDefault();
+new Intl.DateTimeFormat(
 
-    const email =
+'en-US',
 
-      document.getElementById("email").value;
+{
 
-    alert(
+timeZone:'Indian/Maldives',
 
-      "Thank you! Newsletter signup will be connected soon."
+hour:'numeric',
 
-    );
+minute:'2-digit'
 
-    document.getElementById("email").value = "";
+}
 
-  }
+).format(now);
+
+document.getElementById('male-date').textContent =
+
+new Intl.DateTimeFormat(
+
+'en-US',
+
+{
+
+timeZone:'Indian/Maldives',
+
+month:'short',
+
+day:'numeric'
+
+}
+
+).format(now);
+
+}
+
+updateMaleTime();
+
+setInterval(updateMaleTime,1000);
+
+fetch(
+
+'https://api.open-meteo.com/v1/forecast?latitude=4.1752&longitude=73.5092&current=temperature_2m&temperature_unit=celsius'
+
+)
+
+.then(r => r.json())
+
+.then(d => {
+
+if(
+
+d.current &&
+
+d.current.temperature_2m != null
+
+){
+
+document.getElementById('male-temp').textContent =
+
+Math.round(d.current.temperature_2m) + '°C';
+
+}
+
+})
+
+.catch(()=>{});
 
 </script>
 

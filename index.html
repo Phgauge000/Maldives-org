@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Maldives.org | Resorts, Islands, Experiences & Travel Guide</title>
+
+  <meta
+
+    name="description"
+
+    content="Discover the Maldives. Explore luxury resorts, private islands, overwater villas, diving, dining, honeymoon escapes and unforgettable experiences at Maldives.org."
+
+  />
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      background: #f7fdff;
+
+      color: #12303a;
+
+      line-height: 1.6;
+
+    }
+
+    a {
+
+      text-decoration: none;
+
+      color: inherit;
+
+    }
+
+    img {
+
+      max-width: 100%;
+
+      display: block;
+
+    }
+
+    /* HEADER */
+
+    header {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      background: rgba(255, 255, 255, 0.96);
+
+      backdrop-filter: blur(12px);
+
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .topbar {
+
+      max-width: 1400px;
+
+      margin: auto;
+
+      padding: 13px 22px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 25px;
+
+    }
+
+    .logo {
+
+      font-size: 34px;
+
+      font-weight: 900;
+
+      letter-spacing: -1.5px;
+
+      background: linear-gradient(90deg, #00a9c6, #18c5a2, #ffb51b);
+
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+
+      white-space: nowrap;
+
+    }
+
+    nav {
+
+      display: flex;
+
+      gap: 24px;
+
+      align-items: center;
+
+      font-weight: 700;
+
+      font-size: 15px;
+
+    }
+
+    nav a:hover {
+
+      color: #00a9c6;
+
+    }
+
+    .plan-btn {
+
+      background: linear-gradient(90deg, #ff9c1a, #ffca27);
+
+      padding: 11px 18px;
+
+      border-radius: 30px;
+
+      color: #16323a;
+
+      font-weight: 800;
+
+    }
+
+    /* HERO */
+
+    .hero {
+
+      min-height: 82vh;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 80px 20px;
+
+      color: white;
+
+      background:
+
+        linear-gradient(
+
+          rgba(0, 73, 94, 0.22),
+
+          rgba(0, 64, 81, 0.42)
+
+        ),
+
+        url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=2000&q=90");
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+    .hero-content {
+
+      max-width: 1050px;
+
+    }
+
+    .hero-small {
+
+      display: inline-block;
+
+      background: rgba(255, 255, 255, 0.18);
+
+      border: 1px solid rgba(255, 255, 255, 0.5);
+
+      padding: 8px 18px;
+
+      border-radius: 30px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 18px;
+
+    }
+
+    .hero h1 {
+
+      font-size: clamp(64px, 10vw, 140px);
+
+      line-height: 0.9;
+
+      font-weight: 900;
+
+      letter-spacing: -6px;
+
+      text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .hero h2 {
+
+      margin-top: 22px;
+
+      font-size: clamp(25px, 4vw, 48px);
+
+      font-weight: 800;
+
+    }
+
+    .hero p {
+
+      max-width: 750px;
+
+      margin: 18px auto 28px;
+
+      font-size: 19px;
+
+    }
+
+    .hero-buttons {
+
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 15px 25px;
+
+      border-radius: 40px;
+
+      font-weight: 800;
+
+      transition: 0.2s ease;
+
+    }
+
+    .btn:hover {
+
+      transform: translateY(-2px);
+
+    }
+
+    .btn-primary {
+
+      background: #ffbd1f;
+
+      color: #15343c;
+
+    }
+
+    .btn-secondary {
+
+      background: white;
+
+      color: #087d96;
+
+    }
+
+    /* SEARCH */
+
+    .search-wrap {
+
+      max-width: 1050px;
+
+      margin: -45px auto 0;
+
+      position: relative;
+
+      z-index: 20;
+
+      padding: 0 20px;
+
+    }
+
+    .search-box {
+
+      background: white;
+
+      padding: 22px;
+
+      border-radius: 22px;
+
+      box-shadow: 0 15px 50px rgba(15, 95, 110, 0.18);
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr auto;
+
+      gap: 12px;
+
+    }
+
+    .search-box input,
+
+    .search-box select {
+
+      width: 100%;
+
+      border: 1px solid #d8e7eb;
+
+      padding: 15px;
+
+      border-radius: 12px;
+
+      font-size: 15px;
+
+      background: white;
+
+    }
+
+    .search-box button {
+
+      border: 0;
+
+      padding: 15px 23px;
+
+      border-radius: 12px;
+
+      background: #00a8c5;
+
+      color: white;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      font-size: 15px;
+
+    }
+
+    /* GENERAL */
+
+    .section {
+
+      max-width: 1250px;
+
+      margin: auto;
+
+      padding: 90px 22px;
+
+    }
+
+    .section-title {
+
+      text-align: center;
+
+      margin-bottom: 45px;
+
+    }
+
+    .section-title span {
+
+      color: #00a8c5;
+
+      font-size: 14px;
+
+      text-transform: uppercase;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+    }
+
+    .section-title h2 {
+
+      font-size: clamp(34px, 5vw, 55px);
+
+      line-height: 1.05;
+
+      margin: 8px auto 12px;
+
+    }
+
+    .section-title p {
+
+      max-width: 700px;
+
+      margin: auto;
+
+      color: #58727a;
+
+      font-size: 18px;
+
+    }
+
+    /* QUICK CATEGORIES */
+
+    .categories {
+
+      display: grid;
+
+      grid-template-columns: repeat(6, 1fr);
+
+      gap: 15px;
+
+    }
+
+    .category {
+
+      background: white;
+
+      border-radius: 18px;
+
+      padding: 25px 14px;
+
+      text-align: center;
+
+      box-shadow: 0 8px 30px rgba(20, 90, 105, 0.08);
+
+      transition: 0.2s ease;
+
+    }
+
+    .category:hover {
+
+      transform: translateY(-6px);
+
+    }
+
+    .category .emoji {
+
+      font-size: 40px;
+
+      margin-bottom: 9px;
+
+    }
+
+    .category strong {
+
+      display: block;
+
+      font-size: 16px;
+
+    }
+
+    /* RESORT CARDS */
+
+    .resort-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+
+    }
+
+    .resort-card {
+
+      background: white;
+
+      overflow: hidden;
+
+      border-radius: 24px;
+
+      box-shadow: 0 12px 38px rgba(18, 93, 105, 0.11);
+
+    }
+
+    .resort-image {
+
+      height: 260px;
+
+      background-size: cover;
+
+      background-position: center;
+
+      position: relative;
+
+    }
+
+    .tag {
+
+      position: absolute;
+
+      top: 15px;
+
+      left: 15px;
+
+      background: #ffbd1f;
+
+      color: #17353d;
+
+      padding: 7px 12px;
+
+      border-radius: 20px;
+
+      font-size: 12px;
+
+      font-weight: 900;
+
+    }
+
+    .resort-info {
+
+      padding: 22px;
+
+    }
+
+    .resort-info h3 {
+
+      font-size: 23px;
+
+      margin-bottom: 6px;
+
+    }
+
+    .resort-info p {
+
+      color: #607a82;
+
+      margin-bottom: 14px;
+
+    }
+
+    .learn-more {
+
+      color: #0099b5;
+
+      font-weight: 900;
+
+    }
+
+    /* EXPERIENCE */
+
+    .experience-section {
+
+      background: linear-gradient(135deg, #00a8c5, #13bea1);
+
+      color: white;
+
+    }
+
+    .experience-inner {
+
+      max-width: 1250px;
+
+      margin: auto;
+
+      padding: 90px 22px;
+
+    }
+
+    .experience-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 18px;
+
+    }
+
+    .experience-card {
+
+      min-height: 300px;
+
+      border-radius: 22px;
+
+      overflow: hidden;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      padding: 22px;
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+    .experience-card::before {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+
+    }
+
+    .experience-card h3 {
+
+      z-index: 2;
+
+      font-size: 24px;
+
+    }
+
+    /* FEATURE BAND */
+
+    .feature-band {
+
+      background: #fff3c8;
+
+    }
+
+    .feature-grid {
+
+      max-width: 1250px;
+
+      margin: auto;
+
+      padding: 70px 22px;
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 30px;
+
+      text-align: center;
+
+    }
+
+    .feature-number {
+
+      font-size: 42px;
+
+      font-weight: 900;
+
+      color: #00a6bd;
+
+    }
+
+    .feature-label {
+
+      font-weight: 800;
+
+    }
+
+    /* ADVERTISE */
+
+    .advertise {
+
+      max-width: 1200px;
+
+      margin: 80px auto;
+
+      padding: 60px 30px;
+
+      border-radius: 30px;
+
+      background:
+
+        linear-gradient(135deg, #073847, #006d82);
+
+      color: white;
+
+      text-align: center;
+
+    }
+
+    .advertise h2 {
+
+      font-size: clamp(35px, 5vw, 55px);
+
+      margin-bottom: 15px;
+
+    }
+
+    .advertise p {
+
+      max-width: 760px;
+
+      margin: auto auto 25px;
+
+      font-size: 18px;
+
+      opacity: 0.92;
+
+    }
+
+    .ad-btn {
+
+      background: #ffbc1f;
+
+      color: #18363e;
+
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      padding: 70px 22px;
+
+      text-align: center;
+
+    }
+
+    .newsletter h2 {
+
+      font-size: 40px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .newsletter p {
+
+      color: #60777e;
+
+      margin-bottom: 24px;
+
+    }
+
+    .newsletter-form {
+
+      max-width: 650px;
+
+      margin: auto;
+
+      display: flex;
+
+      gap: 10px;
+
+    }
+
+    .newsletter-form input {
+
+      flex: 1;
+
+      padding: 16px;
+
+      border-radius: 12px;
+
+      border: 1px solid #cadde2;
+
+      font-size: 16px;
+
+    }
+
+    .newsletter-form button {
+
+      border: none;
+
+      border-radius: 12px;
+
+      padding: 16px 22px;
+
+      background: #00a8c5;
+
+      color: white;
+
+      font-weight: 900;
+
+      cursor: pointer;
+
+    }
+
+    /* FOOTER */
+
+    footer {
+
+      background: #062f3a;
+
+      color: white;
+
+      padding: 55px 22px 25px;
+
+    }
+
+    .footer-inner {
+
+      max-width: 1250px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+
+      gap: 40px;
+
+    }
+
+    .footer-logo {
+
+      font-size: 34px;
+
+      font-weight: 900;
+
+      color: #49d9d2;
+
+      margin-bottom: 12px;
+
+    }
+
+    footer h4 {
+
+      margin-bottom: 12px;
+
+      color: #ffbd1f;
+
+    }
+
+    footer a {
+
+      display: block;
+
+      margin-bottom: 8px;
+
+      opacity: 0.85;
+
+    }
+
+    footer a:hover {
+
+      opacity: 1;
+
+    }
+
+    .copyright {
+
+      max-width: 1250px;
+
+      margin: 35px auto 0;
+
+      padding-top: 20px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+      text-align: center;
+
+      opacity: 0.7;
+
+      font-size: 14px;
+
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 950px) {
+
+      nav {
+
+        display: none;
+
+      }
+
+      .topbar {
+
+        justify-content: center;
+
+      }
+
+      .logo {
+
+        font-size: 31px;
+
+      }
+
+      .hero h1 {
+
+        letter-spacing: -3px;
+
+      }
+
+      .search-box {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .categories {
+
+        grid-template-columns: repeat(3, 1fr);
+
+      }
+
+      .resort-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .experience-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .feature-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .footer-inner {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+
+        min-height: 75vh;
+
+      }
+
+      .hero p {
+
+        font-size: 16px;
+
+      }
+
+      .categories {
+
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .experience-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .experience-card {
+
+        min-height: 240px;
+
+      }
+
+      .feature-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .newsletter-form {
+
+        flex-direction: column;
+
+      }
+
+      .footer-inner {
+
+        grid-template-columns: 1fr;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="topbar">
+
+    <a href="#" class="logo">
+
+      Maldives.org
+
+    </a>
+
+    <nav>
+
+      <a href="#resorts">Resorts</a>
+
+      <a href="#experiences">Experiences</a>
+
+      <a href="#">Islands</a>
+
+      <a href="#">Travel Guide</a>
+
+      <a href="#">Deals</a>
+
+      <a href="#advertise">Advertise</a>
+
+      <a href="#resorts" class="plan-btn">
+
+        Plan Your Trip
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-small">
+
+      Welcome to paradise
+
+    </div>
+
+    <h1>Maldives.org</h1>
+
+    <h2>
+
+      Your Gateway to the Maldives
+
+    </h2>
+
+    <p>
+
+      Discover extraordinary resorts, private islands, overwater villas,
+
+      world-class diving, romantic escapes and unforgettable experiences
+
+      across one of the most beautiful destinations on Earth.
+
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#resorts" class="btn btn-primary">
+
+        Explore Resorts
+
+      </a>
+
+      <a href="#experiences" class="btn btn-secondary">
+
+        Discover Experiences
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SEARCH -->
+
+<div class="search-wrap">
+
+  <div class="search-box">
+
+    <input
+
+      type="text"
+
+      placeholder="Search resorts, islands or experiences"
+
+    />
+
+    <select>
+
+      <option>All Resort Types</option>
+
+      <option>Luxury Resorts</option>
+
+      <option>Family Resorts</option>
+
+      <option>Honeymoon Resorts</option>
+
+      <option>Private Islands</option>
+
+      <option>Overwater Villas</option>
+
+    </select>
+
+    <select>
+
+      <option>Any Budget</option>
+
+      <option>Under $500/night</option>
+
+      <option>$500 - $1,000/night</option>
+
+      <option>$1,000 - $2,500/night</option>
+
+      <option>$2,500+/night</option>
+
+    </select>
+
+    <button onclick="alert('Resort search is coming soon!')">
+
+      Search Maldives
+
+    </button>
+
+  </div>
+
+</div>
+
+<!-- DISCOVER -->
+
+<section class="section">
+
+  <div class="section-title">
+
+    <span>Find Your Paradise</span>
+
+    <h2>
+
+      How Do You Want to Experience the Maldives?
+
+    </h2>
+
+    <p>
+
+      From once-in-a-lifetime honeymoon escapes to family adventures,
+
+      diving trips and ultra-luxury private islands.
+
+    </p>
+
+  </div>
+
+  <div class="categories">
+
+    <div class="category">
+
+      <div class="emoji">🏝️</div>
+
+      <strong>Private Islands</strong>
+
+    </div>
+
+    <div class="category">
+
+      <div class="emoji">🌊</div>
+
+      <strong>Overwater Villas</strong>
+
+    </div>
+
+    <div class="category">
+
+      <div class="emoji">💍</div>
+
+      <strong>Honeymoons</strong>
+
+    </div>
+
+    <div class="category">
+
+      <div class="emoji">🤿</div>
+
+      <strong>Diving</strong>
+
+    </div>
+
+    <div class="category">
+
+      <div class="emoji">👨‍👩‍👧‍👦</div>
+
+      <strong>Family Trips</strong>
+
+    </div>
+
+    <div class="category">
+
+      <div class="emoji">✨</div>
+
+      <strong>Ultra Luxury</strong>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURED RESORTS -->
+
+<section class="section" id="resorts">
+
+  <div class="section-title">
+
+    <span>Stay Somewhere Extraordinary</span>
+
+    <h2>
+
+      Featured Maldives Resorts
+
+    </h2>
+
+    <p>
+
+      Explore spectacular resorts throughout the Maldives.
+
+      Full resort profiles, pricing, availability and booking tools are coming next.
+
+    </p>
+
+  </div>
+
+  <div class="resort-grid">
+
+    <article class="resort-card">
+
+      <div
+
+        class="resort-image"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=900&q=85');
+
+        "
+
+      >
+
+        <div class="tag">Luxury</div>
+
+      </div>
+
+      <div class="resort-info">
+
+        <h3>
+
+          Overwater Paradise
+
+        </h3>
+
+        <p>
+
+          Wake above crystal-clear turquoise water in one of the world's
+
+          most iconic tropical experiences.
+
+        </p>
+
+        <a href="#" class="learn-more">
+
+          Explore →
+
+        </a>
+
+      </div>
+
+    </article>
+
+    <article class="resort-card">
+
+      <div
+
+        class="resort-image"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=85');
+
+        "
+
+      >
+
+        <div class="tag">Romance</div>
+
+      </div>
+
+      <div class="resort-info">
+
+        <h3>
+
+          Romantic Escapes
+
+        </h3>
+
+        <p>
+
+          Private beaches, sunset dinners and spectacular villas for
+
+          honeymoons and unforgettable celebrations.
+
+        </p>
+
+        <a href="#" class="learn-more">
+
+          Explore →
+
+        </a>
+
+      </div>
+
+    </article>
+
+    <article class="resort-card">
+
+      <div
+
+        class="resort-image"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=900&q=85');
+
+        "
+
+      >
+
+        <div class="tag">Adventure</div>
+
+      </div>
+
+      <div class="resort-info">
+
+        <h3>
+
+          Island Adventures
+
+        </h3>
+
+        <p>
+
+          Snorkel reefs, dive with marine life, explore islands and
+
+          experience the incredible Indian Ocean.
+
+        </p>
+
+        <a href="#" class="learn-more">
+
+          Explore →
+
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCES -->
+
+<section class="experience-section" id="experiences">
+
+  <div class="experience-inner">
+
+    <div class="section-title">
+
+      <span style="color:#ffdd63;">
+
+        Unforgettable Moments
+
+      </span>
+
+      <h2>
+
+        Experience the Maldives
+
+      </h2>
+
+      <p style="color:white;">
+
+        The Maldives is much more than a hotel room.
+
+        Discover the experiences that make these islands legendary.
+
+      </p>
+
+    </div>
+
+    <div class="experience-grid">
+
+      <div
+
+        class="experience-card"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=85');
+
+        "
+
+      >
+
+        <h3>
+
+          Diving & Snorkeling
+
+        </h3>
+
+      </div>
+
+      <div
+
+        class="experience-card"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85');
+
+        "
+
+      >
+
+        <h3>
+
+          Ocean Adventures
+
+        </h3>
+
+      </div>
+
+      <div
+
+        class="experience-card"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=85');
+
+        "
+
+      >
+
+        <h3>
+
+          Private Beaches
+
+        </h3>
+
+      </div>
+
+      <div
+
+        class="experience-card"
+
+        style="
+
+        background-image:
+
+        url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=85');
+
+        "
+
+      >
+
+        <h3>
+
+          Sunset Escapes
+
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DESTINATION HIGHLIGHTS -->
+
+<section class="feature-band">
+
+  <div class="feature-grid">
+
+    <div>
+
+      <div class="feature-number">1,000+</div>
+
+      <div class="feature-label">
+
+        Coral Islands
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="feature-number">26</div>
+
+      <div class="feature-label">
+
+        Natural Atolls
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="feature-number">100s</div>
+
+      <div class="feature-label">
+
+        Resorts & Hotels
+
+      </div>
+
+    </div>
+
+    <div>
+
+      <div class="feature-number">∞</div>
+
+      <div class="feature-label">
+
+        Unforgettable Memories
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ADVERTISING -->
+
+<section class="advertise" id="advertise">
+
+  <h2>
+
+    Reach Travelers Planning the Maldives
+
+  </h2>
+
+  <p>
+
+    Maldives.org is being built as an independent destination platform
+
+    connecting travelers with resorts, hotels, airlines, private aviation,
+
+    excursions, restaurants and premium travel brands.
+
+  </p>
+
+  <a
+
+    href="mailto:advertise@maldives.org"
+
+    class="btn ad-btn"
+
+  >
+
+    Advertise on Maldives.org
+
+  </a>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+  <h2>
+
+    Dreaming of the Maldives?
+
+  </h2>
+
+  <p>
+
+    Get resort discoveries, destination guides, travel inspiration
+
+    and special offers.
+
+  </p>
+
+  <form
+
+    class="newsletter-form"
+
+    onsubmit="subscribe(event)"
+
+  >
+
+    <input
+
+      id="email"
+
+      type="email"
+
+      placeholder="Enter your email address"
+
+      required
+
+    />
+
+    <button type="submit">
+
+      Join Free
+
+    </button>
+
+  </form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div>
+
+      <div class="footer-logo">
+
+        Maldives.org
+
+      </div>
+
+      <p>
+
+        Discover the islands, resorts, people and experiences
+
+        of one of the world's most extraordinary destinations.
+
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>
+
+        Discover
+
+      </h4>
+
+      <a href="#resorts">Resorts</a>
+
+      <a href="#">Islands</a>
+
+      <a href="#experiences">Experiences</a>
+
+      <a href="#">Travel Guide</a>
+
+    </div>
+
+    <div>
+
+      <h4>
+
+        Plan
+
+      </h4>
+
+      <a href="#">Best Time to Visit</a>
+
+      <a href="#">Flights</a>
+
+      <a href="#">Transfers</a>
+
+      <a href="#">Travel Tips</a>
+
+    </div>
+
+    <div>
+
+      <h4>
+
+        Partners
+
+      </h4>
+
+      <a href="#advertise">Advertise</a>
+
+      <a href="#">List Your Resort</a>
+
+      <a href="#">Travel Partners</a>
+
+      <a href="#">Contact</a>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+
+    © <span id="year"></span> Maldives.org.
+
+    All rights reserved.
+
+  </div>
+
+</footer>
+
+<script>
+
+  document.getElementById("year").textContent =
+
+    new Date().getFullYear();
+
+  function subscribe(event) {
+
+    event.preventDefault();
+
+    const email =
+
+      document.getElementById("email").value;
+
+    alert(
+
+      "Thank you! Newsletter signup will be connected soon."
+
+    );
+
+    document.getElementById("email").value = "";
+
+  }
+
+</script>
+
+</body>
+
+</html>
